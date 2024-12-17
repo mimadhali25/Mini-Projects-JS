@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html,body{
+    height: 100vh;
+}
+body{
+    background-image: url(image4.png) ;
+    background-size: cover;
+    background-position: centre centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.container
+{
+    background-color: transparent;
+    width : 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 5px solid beige;
+    border-radius: 10px;
+}
+.timer
+{
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+}
+.start
+{
+    background-color: green;
+    padding : 10px;
+    margin-right: 10px;
+}
+.rotate
+{
+    background-color: red;
+    padding: 10px;
+    margin-left: 10px;
+}
+.fa-pause{
+    background-color: yellow;
+    padding: 10px;
+    margin-right: 10px;
+}

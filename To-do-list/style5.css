@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+html,body{
+    height: 100vh;
+}
+h1{
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 2px solid #8897c2;
+    border-radius: 30%;
+    color: #8897c2;
+    letter-spacing: 2px;
+}
+body{
+    background-image: url(image5.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:50%;
+    height: 10%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+.hidden
+{
+    display: none !important;
+}
+input{
+    flex: 3;
+    width: 60%;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.addbtn
+{
+    width:20%;
+    border-radius: 5px;
+    border : 1px solid green;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    padding-left: 65px;
+    padding-top: 5px;
+    margin-left: 5px;
+    color: green;
+}
+.addbtn:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+.addedtask{
+    font-size: 1.2rem;
+    width:50%;
+    height: 7%;
+    margin-top: 30px;
+    list-style: none;
+}
+.task{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.task li{
+    flex: 2;
+    padding: 10px;
+    margin: 10px;
+}
+.task button
+{
+    flex: 1;
+    border-radius: 5px;
+    margin: 5px;
+    height: 80%;
+}
+.task .checktask{
+    border: 1px solid green;
+    color: green;
+}
+.task .deletetask{
+    border: 1px solid red;
+    color: red;
+    transition: 0.5s;
+}
+.task .checktask:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+.task .deletetask:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+.modalcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:20px;
+    background-color: antiquewhite;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    animation-name: animatemodal;
+    animation-duration: 1s;
+}
+@keyframes animatemodal
+{
+    from
+    {
+        top:-200px;
+        opacity: 0;
+    }
+    to 
+    {
+        top:50%;
+        opacity: 1;
+    }
+}
+.close
+{
+    margin-left: 5px;
+    color: red;
+    cursor: pointer;
+    font-size: 25px;
+}
